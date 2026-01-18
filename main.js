@@ -41,10 +41,10 @@ function renderQuestion() {
       answers[index].innerText = answer;
     });
   } else if (correct == questions.length) {
-    questionh1.innerText = `Milyoner!!! ${correct}/${questions.length}`;
+    questionh1.innerText = `Millionaire!!! ${correct}/${questions.length}`;
     answerBar.style.display = "none";
   } else {
-    questionh1.innerText = `Doğru: ${correct}, Yanlış: ${wrong}`;
+    questionh1.innerText = `Correct: ${correct}, Wrong: ${wrong}`;
     answerBar.style.display = "none";
   }
 }
@@ -69,7 +69,7 @@ answers.forEach((a) => {
   a.addEventListener("click", () => {
     if (questions[i].correctAnswer.includes(a.value)) {
       correct++;
-      questionh1.innerText = "Doğru";
+      questionh1.innerText = "Correct";
       disableButtons(answers);
       setTimeout(() => {
         disableButtons(answers);
@@ -78,7 +78,7 @@ answers.forEach((a) => {
       }, 300);
     } else {
       wrong++;
-      questionh1.innerText = "Yanlış";
+      questionh1.innerText = "Wrong";
       disableButtons(answers);
       setTimeout(() => {
         disableButtons(answers);
