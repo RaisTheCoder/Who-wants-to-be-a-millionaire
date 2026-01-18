@@ -1,0 +1,59 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: url("https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fwallpaperaccess.com%2Ffull%2F7929507.jpg&f=1&nofb=1&ipt=c2c378f4126cfe6caafd07ca0fc423ec721112f4e8b1cd36d9042a408c1b0748");
+}
+
+main {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#quiz-game {
+  display: flex;
+  flex-direction: column;
+  height: 300px;
+  width: 500px;
+  border-radius: 7px;
+  background-color: rgba(255, 255, 255, 0.3);
+  backdrop-filter: blur(12px);
+  border: solid 1px rgba(255, 255, 255, 0.3);
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  color: white;
+}
+
+.answers {
+  display: flex;
+  gap: 15px;
+}
+
+.answer {
+  height: 50px;
+  width: 50px;
+  font-size: 28px;
+  cursor: pointer;
+}
+
+#start {
+  width: fit-content;
+  padding: 15px 25px;
+  font-size: 28px;
+  cursor: pointer;
+}
