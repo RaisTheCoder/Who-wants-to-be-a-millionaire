@@ -41,7 +41,7 @@ function renderQuestion() {
       answers[index].innerText = answer;
     });
   } else if (correct == questions.length) {
-    questionh1.innerText = "Milyoner!!!";
+    questionh1.innerText = `Milyoner!!! ${correct}/${questions.length}`;
     answerBar.style.display = "none";
   } else {
     questionh1.innerText = `Doğru: ${correct}, Yanlış: ${wrong}`;
